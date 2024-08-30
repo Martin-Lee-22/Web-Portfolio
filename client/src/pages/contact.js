@@ -18,7 +18,7 @@ export default function Contact() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    const data = await axios.get("http://localhost:8000").then((response)=>{return response.data});
+    const data = await axios.get("https://web-portfolio-server-i3dz.onrender.com/").then((response)=>{return response.data});
     emailjs.sendForm(data.serviceID, data.publicID, form.current, data.publicKey)
       .then(
         () => {
