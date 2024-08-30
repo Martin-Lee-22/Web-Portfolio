@@ -26,13 +26,15 @@ export default function Contact() {
           setEmail("");
           setName("");
           setMessage("");
+          setShowResponse(true);
         },
         (error) => {
           setResponseSuccess(false)
           console.log(error)
+          setShowResponse(true);
         }
       );
-      setShowResponse(true);
+  
   };
 
   return (
@@ -51,8 +53,7 @@ export default function Contact() {
             You can contact me via the form or at <a href="mailto:man.chuen.lee.22@gmail.com">man.chuen.lee.22@gmail.com</a>
           </h5>
           <form ref={form} onSubmit={sendEmail}>
-            {showResponse && (responseSuccess ? <Response setShowResponse={setShowResponse} responseSuccess={true}/> : 
-                                               <Response setShowResponse={setShowResponse} responseSuccess={false}/>)}
+          {showResponse && <Response setShowResponse={setShowResponse} responseSuccess={responseSuccess}/>}
             <div className="label_wrapper">
               <input
                 type="text"
