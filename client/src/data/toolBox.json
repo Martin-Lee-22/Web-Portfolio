@@ -1,0 +1,87 @@
+[
+    {
+        "id" : 1,
+        "name": "Figma",
+        "path" : "images/figma.png"
+    },
+    {
+        "id" : 2,
+        "name": "Firebase",
+        "path" : "images/firebase.png"
+    },
+    {
+        "id" : 3,
+        "name": "GitHub",
+        "path" : "images/github.png"
+    },
+    {
+        "id" : 4,
+        "name": "HTML5",
+        "path" : "images/html.png"
+    },
+    {
+        "id" : 5,
+        "name": "Java",
+        "path" : "images/java.png"
+    },
+    {
+        "id" : 6,
+        "name": "JavaScript",
+        "path" : "images/javascript.png"
+    },
+    {
+        "id" : 7,
+        "name": "MongoDB",
+        "path" : "images/mongodb.png"
+    },
+    {
+        "id" : 8,
+        "name": "Node.js",
+        "path" : "images/nodejs.png"
+    },
+    {
+        "id" : 9,
+        "name": "PHP",
+        "path" : "images/php.png"
+    },
+    {
+        "id" : 10,
+        "name": "Python",
+        "path" : "images/python.png"
+    },
+    {
+        "id" : 11,
+        "name": "React",
+        "path" : "images/react.png"
+    },
+    {
+        "id" : 12,
+        "name": "Visual Studio",
+        "path" : "images/visual_studio.png"
+    },
+    {
+        "id" : 13,
+        "name": "Framer",
+        "path" : "images/framer.png"
+    },
+    {
+        "id" : 14,
+        "name": "Render",
+        "path" : "images/render.png"
+    },
+    {
+        "id" : 15,
+        "name": "Express",
+        "path" : "images/express.png"
+    },
+    {
+        "id" : 16,
+        "name": "date-fns",
+        "path" : "images/date-fns.png"
+    },
+    {
+        "id" : 17,
+        "name": "TypeScript",
+        "path" : "images/typescript.png"
+    }
+]

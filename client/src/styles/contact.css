@@ -1,0 +1,177 @@
+#contact_container{
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    & span{
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+}
+#contact_container label{
+    font-size:medium;
+    padding: 0 5px 0 5px;
+    margin-left: 10px;
+    margin-top: 22px;  
+    transition: 0.25s;  
+}
+
+#contact_container input:not(input[type="submit"]){
+    padding: 18px 5px 10px 5px;
+    width: 94.5%;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 25px;
+    font-weight: bold;
+    font-size: medium;
+    &[type=text]{
+        padding-left: 15px;
+    }
+    &[type=email]{
+        padding-left: 15px;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+#contact_container form{
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 70%;
+    padding: 10px 20px 30px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+::placeholder{
+    font-weight: bold;
+}
+
+#contact_container textarea{
+    margin-top: 10px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 94%;
+    height: 250px;
+    padding: 12px;
+    &:focus{
+        outline: none;
+    }
+}
+
+.label_wrapper{
+    position: relative;
+    padding-top: 15px;
+}
+
+.label_effect{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+}
+
+#contact_container input:valid ~ label,
+#contact_container input:focus ~ label{
+ 
+    transform: translateY(-28px);
+    transition: 0.25s;
+}
+
+.email_active{
+    font-size:small;
+    transform: translateY(-28px);
+    transition: 0.25s;
+}
+
+#contact_container input:valid, 
+#contact_container input:focus{
+    border: 1px solid black;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+} 
+
+.message_area{
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+#contact_container input[type='submit']{
+    background-color: white;
+    border-radius: 5px;
+    font-size: large;
+    padding: 10px 20px 10px 20px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    width: 90px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.15) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid black;
+        transition: 0.15s;
+    }
+
+    &:active{
+        scale: 0.95;
+        box-shadow: 0 2px 5px black;
+    }
+}
+
+#contact_container button{
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.25s;
+    padding: 10px 20px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.15) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+    &:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid black;
+        transition: 0.15s;
+    }
+
+    &:active{
+        scale: 0.95;
+        box-shadow: 0 2px 5px black;
+    }
+}
+
+/* Extra small devices (phones, 200px and up but below 767px) */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    #contact_container input:not(input[type="submit"]){
+        width: 88%;
+    }
+    #contact_container input[type='submit']{
+        margin-right: 0.5vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #contact_container input{
+        width: 94.5%;
+    }
+    #contact_container input[type='submit']{
+        margin-right: 16px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #contact_container input{
+        width: 94.5%;
+    }
+}

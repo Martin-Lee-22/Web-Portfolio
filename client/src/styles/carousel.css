@@ -1,0 +1,109 @@
+#carousel_container{
+    position: relative;
+    display: flex;
+    width: 75%;
+    min-height: 370px;
+    max-height: 370px;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    top: 45%;
+    filter: drop-shadow(1px 1px 1px black);
+    transition: 0.10s;
+    &:active{
+        transform: scale(0.9);
+    }
+}
+
+.slide_hide{
+    display: none;
+}
+
+.left_arrow{
+    left: 0.5rem;
+}
+
+.right_arrow{
+    right:0.5rem;
+}
+
+.indicator_wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    column-gap: 8px;
+    padding: 5px;
+}
+
+.indicator{
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #555;
+    cursor: pointer;
+}
+
+.active_indicator{
+    background-color: pink;
+    transition: 0.15s;
+    transform: scale(1.2);
+}
+
+
+/*For extra extra small devices (phones, 350*/
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+    #carousel_container{
+        margin-right: 25px;
+        width: 90%;
+        min-height: 175px;
+        max-height: 175px;
+    }
+    .arrow{
+        width: 25px;
+    }
+}
+
+/* Extra small devices (phones, 400px and up but below 767px) */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    #carousel_container{
+        margin-right: 25px;
+        width: 80%;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .arrow{
+        width: 30px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #carousel_container{
+        margin-right: 20px;
+        width: 80%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .arrow{
+        width: 40px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}

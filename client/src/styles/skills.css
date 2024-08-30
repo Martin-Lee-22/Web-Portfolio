@@ -1,0 +1,29 @@
+#skills_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    height: 1%;
+    width: 60%;
+    background-color: black;
+}
+
+#tools_container{
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 70%;
+    & h2:nth-child(3){
+        margin-top: 55px;
+    }
+}
+
+/*For extra extra small devices (phones, 350*/
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+    #tools_container{
+        width: 100%;
+    }
+}

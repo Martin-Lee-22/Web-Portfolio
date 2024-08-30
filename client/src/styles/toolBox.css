@@ -1,0 +1,88 @@
+#tool_box_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tool_box_wrapper{
+    width: 20%;
+    padding: 10px 0 10px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s;
+    &:hover{
+        scale: 1.2;
+    }
+
+    & img{
+        display: block;
+        width: 50px;
+    }
+
+    &:hover img{
+        animation: rotate 1s linear infinite;
+    }
+    & p {
+        margin: 0;
+        padding-top: 5px;
+        text-align: center;
+    }
+}
+
+@keyframes rotate {
+    33%{
+        transform: rotate(-10deg);
+    }
+    66%{
+        transform: rotate(10deg);
+    }
+    99%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/*For extra extra small devices (phones, 350*/
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+    .tool_box_wrapper{  
+        width: 40%; 
+        & img{
+            width: 45px;
+        }
+        & p {
+            font-size: small;
+        }
+    }
+}
+
+/* Extra small devices (phones, 400px and up but below 767px) */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    .tool_box_wrapper{  
+        width: 30%; 
+        & img{
+            width: 45px;
+        }
+        & p {
+            font-size: medium;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tool_box_wrapper{    
+        & img{
+            display: block;
+            width: 50px;
+        }
+        & p {
+            margin: 0;
+            padding-top: 5px;
+            font-size: medium;
+        }
+    }
+}

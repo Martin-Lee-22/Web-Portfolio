@@ -1,0 +1,256 @@
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(11px);
+}
+
+#modal_container{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 65%;
+    height: 700px;
+    padding: 0 0 60px 30px;
+    border-radius: 10px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#modal_nav_wrapper{
+    width: 100%;
+    position: sticky;
+    top:0;
+}
+
+#close_btn{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.075) 0px 7px 13px -3px, rgba(0, 0, 0, 0.05) 0px -3px 0px inset;
+    width: 45px;
+    float: right;
+    border-top-right-radius: 10px;
+    &:hover{
+        background-color: rgba(245, 139, 139, 0.65);
+        transform: scale(1.075);
+    }
+    &:active{
+        transform: scale(1);
+    }
+}
+
+#project_img{
+    width: 75%;
+}
+
+#project_info_container{
+    margin-top: 10px;
+    display: flex;
+    height: 325px;
+    padding-right: 30px;
+    gap: 10px;
+}
+
+#project_description_container{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.075) 0px 7px 13px -3px, rgba(0, 0, 0, 0.05) 0px -3px 0px inset;
+    padding: 10px 0 10px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    overflow-y: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+    & p{
+        font-size: 14pt;
+        margin-top: 8px;
+    }
+    & h2{
+        margin: 10px 0 10px 0;
+    }
+    & h3:nth-child(2){
+        margin: 10px 0 10px 0;
+        font-size: 15pt;
+        text-decoration: underline;
+    }
+    & h4{
+        margin: 10px 0 0 0;
+    } 
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(88, 144, 247);
+    border-radius: 5px;
+  }
+
+#project_toolbox_container{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.075) 0px 7px 13px -3px, rgba(0, 0, 0, 0.05) 0px -3px 0px inset;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    overflow-y: scroll;
+    & img{
+        width: 40px;
+    }
+    & p{
+        font-size: 10pt;
+    }
+
+    & h3{
+        border-bottom: 2px dotted lightgray;
+        padding: 0 0 6px 5px;
+    }
+}
+
+
+/*For extra extra small devices (phones, 350*/
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+    #project_info_container{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    #project_description_container{
+        padding: 0;
+        width: 100%;
+        & *{
+            padding: 0 0 0 20px;
+        }
+        & p{
+            font-size: 7.5pt;
+        }
+    
+        & h2{
+            margin-top: 0;
+            font-size: 13pt;
+        }
+        & h3{
+            font-size: 9pt;
+        }     
+    }
+
+    #project_toolbox_container{
+        width: 85%;
+    }
+
+    #close_btn{
+        right: 9.5%;
+        top: 1.7%;
+        width: 35px;
+    }
+    #modal_container{
+        overflow-y: scroll;
+        border: 2px solid red;
+    }
+}
+
+/* Extra small devices (phones, 400px and up but below 767px) */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    #project_info_container{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #close_btn{
+        right: 10.5%;
+        top: 1.7%;
+        width: 35px;
+    }
+    #modal_container{
+        overflow-y: scroll;
+    }
+    #project_toolbox_container{
+        width: 85%;
+    }
+
+    #project_description_container{
+        & p{
+            font-size: 8pt;
+        }
+    
+        & h2{
+            margin-top: 0;
+            font-size: 13pt;
+        }
+        & h3{
+            font-size: 9pt;
+        }     
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #project_info_container{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #modal_container{
+        overflow-y: scroll;
+    }
+    #project_toolbox_container{
+        width: 70%;
+    }
+    #project_description_container{
+
+        & p{
+            font-size: 10pt;
+        }
+    
+        & h2{
+            margin-top: 0;
+            font-size: 15pt;
+        }
+        & h3{
+            font-size: 11pt;
+        }     
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #project_info_container{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #project_description_container{
+        width: 90%;
+    }
+
+    #modal_container{
+        overflow-y: scroll;
+        border: 2px solid red;
+    }
+
+    #project_toolbox_container{
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

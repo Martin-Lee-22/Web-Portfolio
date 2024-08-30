@@ -1,0 +1,16 @@
+.response_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    & img{
+        width: 23%;
+    }
+    background-color: rgb(255, 255, 255);
+}

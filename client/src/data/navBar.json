@@ -1,0 +1,22 @@
+[
+    {
+        "name": "About",
+        "path": "images/user.png",
+        "alt" : "Image of User-icon"
+    },
+    {
+        "name": "Skills",
+        "path": "images/skills.png",
+        "alt" : "Image of Skills-icon"
+    },
+    {
+        "name": "Projects",
+        "path": "images/projects.png",
+        "alt" : "Image of Projects-icon"
+    },
+    {
+        "name": "Contact",
+        "path": "images/contact.png",
+        "alt" : "Image of contact-icon"
+    }
+]

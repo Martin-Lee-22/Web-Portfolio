@@ -1,0 +1,88 @@
+#loading_container{
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    transform: translate(-50%, -50%);
+    top: 32%;
+    left: 50%;
+    height: 25%;
+}
+
+#loading_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote_wrapper{
+    margin-top: 35px;
+    & img{
+        width: 60px;
+        transform: rotateZ(-180deg);
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+    & span{
+        font-family:cursive;
+        font-weight: 600;
+        margin-left: 8px;
+        font-size: 12pt;
+    }
+}
+
+#quote_wrapper:hover{
+    cursor: pointer;
+}
+
+#quote_container{
+    animation: hover 6s linear 1s infinite;
+}
+
+#author{
+    text-align: right;
+    font-style: italic;
+    font-size: 12pt;
+}
+
+@keyframes hover {
+    25%{
+        transform: translate(-1%, -2%);
+    }
+    50%{
+        transform: translate(0, -4%);
+    }
+    75%{
+        transform: translate(1%, -2%);
+    }
+    100%{
+        transform: translate(0, 0);
+    } 
+}
+
+
+/* Extra small devices (phones, 200px and up but below 767px) */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    #loading_container{
+        /* border: 2px solid blue; */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #loading_container{
+        /* border: 2px solid green; */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #loading_container{
+        /* border: 2px solid yellow; */
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #loading_container{
+        /* border: 2px solid red; */
+    }
+}

@@ -1,0 +1,47 @@
+body{
+    background-color: #f1f0ee;
+    background-image:  linear-gradient(#ffffff 4px, transparent 4px), linear-gradient(to right, #ffffff 4px, #f1f0ee 4px);
+    background-size: 80px 80px;
+    margin: 0;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+#response_container{
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    width: 70rem;
+}
+
+/* Extra small devices (phones, 200px and up but below 767px) */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    #response_container{
+        width: 85%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #response_container{
+        width: 85%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #response_container{
+        width: 60rem;
+    }   
+}
