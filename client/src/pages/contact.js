@@ -28,7 +28,7 @@ export default function Contact() {
           setMessage("");
         },
         (error) => {
-          setResponseSuccess(false);
+          setResponseSuccess(false)
           console.log(error)
         }
       );
@@ -51,7 +51,8 @@ export default function Contact() {
             You can contact me via the form or at <a href="mailto:man.chuen.lee.22@gmail.com">man.chuen.lee.22@gmail.com</a>
           </h5>
           <form ref={form} onSubmit={sendEmail}>
-            {showResponse && <Response setShowResponse={setShowResponse} responseSuccess={responseSuccess}/>}
+            {showResponse && responseSuccess ? <Response setShowResponse={setShowResponse} responseSuccess={true}/> : 
+                                               <Response setShowResponse={setShowResponse} responseSuccess={false}/>}
             <div className="label_wrapper">
               <input
                 type="text"
