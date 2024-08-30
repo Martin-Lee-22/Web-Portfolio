@@ -51,8 +51,8 @@ export default function Contact() {
             You can contact me via the form or at <a href="mailto:man.chuen.lee.22@gmail.com">man.chuen.lee.22@gmail.com</a>
           </h5>
           <form ref={form} onSubmit={sendEmail}>
-            {showResponse && responseSuccess ? <Response setShowResponse={setShowResponse} responseSuccess={true}/> : 
-                                               <Response setShowResponse={setShowResponse} responseSuccess={false}/>}
+            {showResponse && (responseSuccess ? <Response setShowResponse={setShowResponse} responseSuccess={true}/> : 
+                                               <Response setShowResponse={setShowResponse} responseSuccess={false}/>)}
             <div className="label_wrapper">
               <input
                 type="text"
