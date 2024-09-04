@@ -16,7 +16,7 @@ export default function Card(props) {
         <div id="description_container">
           <h3>{props.title.substring(0, 20)}{props.title.length >= 20 && <span>...</span>}</h3>
           <hr/>
-          <p>{props.description.substring(0, 155)}{props.description.length >= 155 && <span>...</span>}</p>
+          <p>{props.description.substring(0, 101)}{props.description.length >= 101 && <span>...</span>}</p>
         </div>
       </div>
     </motion.div>

@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 75px;
-    width: 70rem;
+    width: 60rem;
 }
 
 /* Extra small devices (phones, 200px and up but below 767px) */

@@ -1,6 +1,6 @@
 #card_container{
-    width: 265px;
-    height: 340px;
+    width: 225px;
+    height: 300px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
