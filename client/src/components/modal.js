@@ -38,14 +38,14 @@ export default function Modal(props) {
               <h2>{title}</h2>
               <h3>{role}</h3>
               <p>{description}</p>
-              <h4>Link:<a href={github}>{github}</a></h4>
+              <h4>Link:<a href={link}>{link}</a></h4>
               <h4>Github:<a href={github}>{github}</a></h4>
             </div>
             <div id="project_toolbox_container">
               <h3>Toolbox</h3>
-              <ToolBox tools={tools} />
+              <ToolBox tools={tools}/>
               <h3>Libraries</h3>
-              <ToolBox tools={libraries} />
+              {libraries.length > 0 && <ToolBox tools={libraries}/>}
             </div>
           </div>
         </motion.div>
