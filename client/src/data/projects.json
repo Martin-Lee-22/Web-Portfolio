@@ -16,7 +16,8 @@
         "tools":[3, 4, 6, 8, 11, 12, 13, 14, 15, 17, 18, 19],
         "libraries": [],
         "link": "https://easycolorui.onrender.com/",
-        "github": "https://github.com/Martin-Lee-22/easycolorui"
+        "github": "https://github.com/Martin-Lee-22/easycolorui",
+        "inProgress": true
     },
     {
         "title": "Medical Clinic",
@@ -63,7 +64,8 @@
         "tools":[3, 6, 7, 8, 11, 12, 14, 15, 17],
         "libraries": [16],
         "link": "https://medical-clinic-frontend.onrender.com/",
-        "github": "https://github.com/Martin-Lee-22/Medical-Clinic/tree/main"
+        "github": "https://github.com/Martin-Lee-22/Medical-Clinic/tree/main",
+        "inProgress": false
     },
     {
         "title": "Web Portfolio",
@@ -90,6 +92,7 @@
         "tools":[3,4,6,11,12],
         "libraries": [13],
         "link": "https://web-portfolio-3j2o.onrender.com/",
-        "github": "https://github.com/Martin-Lee-22/Web-Portfolio"
+        "github": "https://github.com/Martin-Lee-22/Web-Portfolio",
+        "inProgress": false
     }
 ]

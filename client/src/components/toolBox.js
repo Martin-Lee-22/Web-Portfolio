@@ -18,7 +18,7 @@ export default function ToolBox(props){
                                 <img src={tool['path']} alt="Image of a development tool"/>
                                 <p>{tool['name']}</p>
                         </motion.div>
-                       )
+                    )
                 }
             })}
         </div>

@@ -4,7 +4,7 @@ import ToolBox from '../components/toolBox'
 import {motion} from 'framer-motion'
 
 export default function Skills(){
-    const webTools = [1,2,3,4,6,7,8,9,11,12,14,15,17]
+    const webTools = [1,2,3,4,6,7,8,9,11,12,14,15,17,18,19]
     const softwareTools = [5,10]
     return(
         <motion.div

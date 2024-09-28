@@ -14,6 +14,7 @@ export default function Modal(props) {
   const role = project["role"];
   const link = project["link"];
   const github = project["github"];
+  const inProgress = project["inProgress"];
 
   return (
     <div>
@@ -36,16 +37,22 @@ export default function Modal(props) {
           <div id="project_info_container">
             <div id="project_description_container">
               <h2>{title}</h2>
-              <h3>{role}</h3>
+              <h4>{role}</h4>
+              {inProgress &&<h3>(Work In Progress...)</h3>}
               <p>{description}</p>
-              <h4>Link:<a href={link}>{link}</a></h4>
-              <h4>Github:<a href={github}>{github}</a></h4>
+              <h5>Link:<a href={link}>{link}</a></h5>
+              <h5>Github:<a href={github}>{github}</a></h5>
             </div>
             <div id="project_toolbox_container">
               <h3>Toolbox</h3>
               <ToolBox tools={tools}/>
-              <h3>Libraries</h3>
-              {libraries.length > 0 && <ToolBox tools={libraries}/>}
+              {libraries.length > 0 && 
+              <>
+                <h3>Libraries</h3>
+                <ToolBox tools={libraries}/>
+              </>
+              }
+
             </div>
           </div>
         </motion.div>

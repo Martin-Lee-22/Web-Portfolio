@@ -27,6 +27,7 @@ export default function Projects(props) {
                 images={project.images}
                 alt={project.alt}
                 description={project.description}
+                inProgress={project.inProgress}
               />
             </motion.div>
           );
