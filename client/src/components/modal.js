@@ -40,8 +40,8 @@ export default function Modal(props) {
               <h4>{role}</h4>
               {inProgress &&<h3>(Work In Progress...)</h3>}
               <p>{description}</p>
-              <h5>Link:<a href={link}>{link}</a></h5>
-              <h5>Github:<a href={github}>{github}</a></h5>
+              <h5>Link:<a href={link} target="_blank">{link}</a></h5>
+              <h5>Github:<a href={github} target="_blank">{github}</a></h5>
             </div>
             <div id="project_toolbox_container">
               <h3>Toolbox</h3>
