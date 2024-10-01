@@ -1,6 +1,7 @@
 [
     {
         "title": "easycolorui",
+        "date": "2024",
         "role": "Lead Developer",
         "description": "A UI/UX web application that allows users to effortlessly create their own color palettes and test them on HTML element in real time.",
         "images": [
@@ -13,14 +14,15 @@
                         "alt": "Default home page with color"
                     }
                 ],
-        "tools":[3, 4, 6, 8, 11, 12, 13, 14, 15, 17, 18, 19],
+        "tools":[3, 4, 6, 8, 11, 12, 13, 14, 15, 17, 18, 19, 20],
         "libraries": [],
         "link": "https://easycolorui.onrender.com/",
         "github": "https://github.com/Martin-Lee-22/easycolorui",
-        "inProgress": true
+        "inProgress": false
     },
     {
         "title": "Medical Clinic",
+        "date": "2024",
         "role": "Lead Developer",
         "description": "A personal 'MERN' web application designed for medical office assistants to streamline administrative tasks. It allows users to create and manage profiles for patients, doctors, and clinic facilities. This application enables office staff to schedule and track patient appointments to minimize scheduling conflicts.",
         "images": [
@@ -69,6 +71,7 @@
     },
     {
         "title": "Web Portfolio",
+        "date": "2022",
         "role": "Lead Developer",
         "description": "A responsive static website that showcase my skills/experience and provide a means of communication.",
         "images": [

@@ -1,5 +1,6 @@
 #card_container{
     width: 225px;
+    overflow-y: hidden;
     height: 300px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -22,7 +23,7 @@
 }
 
 #description_container{
-    text-align: left;    
+    text-align: left;  
     & p{
         font-size: medium;
         font-weight: 500;
@@ -31,10 +32,16 @@
         margin: 0;
     }
     & h3{
-        margin: 10px;
+        margin: 10px 0 0 0;
+        display: inline-block;
     }
     & span{
         font-weight: bold;
         font-size: 13pt;
     }
+}
+
+.date{
+    margin: 0 0 10px 10px;
+    display: inline-block;
 }
